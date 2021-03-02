@@ -2,10 +2,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
+const onClick = (e)=>{
+    console.log('from component');
+}
 const Greeting = ({age , name})=>{
     return (
         <div>
+            <button onClick={onClick}>cliack here</button>
             hello world {name} {age}
         </div>
     );
